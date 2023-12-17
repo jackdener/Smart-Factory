@@ -1,0 +1,142 @@
+/* OnlineStore.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .products {
+    width: 100%;
+  }
+  
+  .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  .product-info {
+    flex: 1;
+  }
+  
+  .product-name {
+    color: #2c3e50;
+    font-weight: bold;
+  }
+  
+  .product-price {
+    color: #27ae60;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #3498db; /* Cor azul */
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #2980b9; /* Tom mais escuro de azul ao passar o mouse */
+  }
+  
+  .remove-from-cart-btn {
+    background-color: #e74c3c; /* Cor vermelha */
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .remove-from-cart-btn:hover {
+    background-color: #c0392b; /* Tom mais escuro de vermelho ao passar o mouse */
+  }
+  
+  .cart {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .cart-header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .cart-items {
+    margin-top: 10px;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .cart-item {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .header,
+    .cart-header {
+      font-size: 18px;
+    }
+  
+    .product {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .add-to-cart-btn,
+    .remove-from-cart-btn {
+      margin-top: 8px;
+    }
+  }
+  
