@@ -8,7 +8,7 @@ const OnlineStore = () => {
     { id: 1, name: 'Suco de Laranja', price: 5.99 },
     { id: 2, name: 'Suco de Maçã', price: 4.99 },
     { id: 3, name: 'Suco de Uva', price: 6.99 },
-    // Adicione mais produtos conforme necessário
+    { id: 4, name: 'Suco de Maracujá', price: 7.50 },
   ]);
 
   const addToCart = (product) => {
@@ -20,8 +20,11 @@ const OnlineStore = () => {
   };
 
   const confirmOrder = () => {
-    // Lógica para confirmar o pedido, pode ser adicionada aqui
-    console.log('Pedido Confirmado:', cart);
+    let pedido = 'Pedido Confirmado';
+    for(let juice of carts){
+      pedido += '\n'+juice.name+': R$'+juice.price;
+    }
+    console.log(pedido);
   };
 
   return (
